@@ -1,0 +1,9 @@
+footer {
+    background-color: maroon;
+}
+
+p,a{
+    text-decoration: none;
+    padding: 10px;
+    color: blueviolet;
+}

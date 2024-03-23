@@ -1,0 +1,39 @@
+ul {
+    align-items: center;
+    margin: 2rem auto;
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    width: 80%;
+    max-width: 20rem;
+    box-shadow: 2px 2px 10px #63b1be;
+    border-radius: 5px;
+    height: 18rem;
+    background-color: gray;
+}
+
+li {
+    border-bottom: 1px solid greenyellow;
+    color: rgb(2, 100, 100);
+    padding: 5px;
+    
+}
+
+li:last-of-type,
+li:nth-child(6) {
+    border: none;
+}
+
+li a {
+    text-decoration: none;
+    color: aqua;
+    font-size: 30px;
+}
+
+h1{
+    color: gray;
+    font-size: 50px;
+}
+

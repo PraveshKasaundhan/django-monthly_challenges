@@ -1,0 +1,30 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "challenges/index.css" %}">
+    <link rel="stylesheet" href="{% static "challenges/includes/header.css" %} ">
+    <link rel="stylesheet" href="{% static "footer.css" %} ">
+
+
+{% endblock css_files %}
+
+{% block html_title %}
+    Challenge Index
+{% endblock html_title %}
+
+{% block html_body %}
+
+    {% include "challenges/includes/header.html" with active_page="Index-Page" %}
+
+    <h1>Please select from below list of months ..........................................</h1>
+    <ul>
+        {% for month in months %}
+            <li><a href="{% url "month-challenge" month=month %}">{{month|title}}</a></li>
+        {% endfor %}
+    </ul>
+
+    {% include "footer.html" %}
+
+{% endblock html_body %}
